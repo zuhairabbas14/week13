@@ -1,0 +1,14 @@
+
+Following three strategies are used to deal with the deadlocks..
+
+<> Recovery Strategy:
+
+This strategy requires a process to run in the background which continuesly checks for the deadlock. This can be useless if there is no deadlock and can consume some CPU time. It can be unacceptable for the system that requires a good performance and don't have to wait for the deadlock detection and its fix, that can be crucial for the real-time system e.g: show something immediately after it appears, but it deadlocked. In such cases, even recoveries are not possible sometimes.
+
+<> Prevention Strategy:
+
+In this strategy, there is a possibilty of starvation. If we meet the "hold and wait" condition, we will not be able to fully use the resources of our system. Thus, we will lack the its usage to full potential.
+
+<> Avoidance Strategy: 
+
+This strategy is actually impossible to implement due to the halting problem although it has a solution with the banker's algorithm. Incase we avoid reaching the unsafe spot, we will not be able to fully use the resources of our system. Thus, we will lack the its usage to full potential.
